@@ -66,7 +66,7 @@ Builds the assets once, it also enabled minification and sets the NODE_ENV=produ
 parcel build index.html
 ```
 
-As opposed to `serve` and `watch`, `build` has [scope hoisting](/features/scope-hoisting) enabled by default (so the other commmands implicity specify `--no-scope-hoist`).
+As opposed to `serve` and `watch`, `build` has [scope hoisting](/features/scope-hoisting) enabled by default (so the other commmands implicity specify `--experimental-scope-hoist`).
 
 ## Parameters
 
@@ -108,5 +108,5 @@ As opposed to `serve` and `watch`, `build` has [scope hoisting](/features/scope-
 | Format                      | Description                                                                                                                               |
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | `--no-minify`               | Disables minification (exact behaviour is determined by plugins). <br> Related [`targets.*.minify`](/configuration/package-json/#targets) |
-| `--no-scope-hoist`          | Disables scope hoisting. <br> Related: [`targets.*.scopeHoist`](/configuration/package-json/#targets)                                     |
+| `--experimental-scope-hoist`          | Disables scope hoisting. <br> Related: [`targets.*.scopeHoist`](/configuration/package-json/#targets)                                     |
 | `--detailed-report [depth]` | Displays the largest 10 (number configurable with `depth`) assets per bundle in the CLI report                                            |
